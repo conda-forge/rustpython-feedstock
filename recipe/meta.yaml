@@ -17,7 +17,6 @@ build:
   missing_dso_whitelist:  # [osx]
     - /usr/lib/libresolv.9.dylib  # [osx]
     - /usr/lib/libz.1.dylib  # [osx]
-  script: "cargo install rustpython --root $PREFIX"
 
 requirements:
   build:
