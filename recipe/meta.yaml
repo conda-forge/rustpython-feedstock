@@ -1,20 +1,20 @@
 {% set name = "rustpython" %}
-{% set version = "0.1.0" %}
-{% set build = 1 %}
-{% set sha256 = "35bad7847544a9ce1b78330790fa62c2388c7779b7f64b3156c8fca59066f36d" %}
+{% set version = "0.1.2" %}
+{% set build = 0 %}
+{% set sha256 = "14c2786b28072006de1f9035487b0f65a9d1972d7e1f3fe4a2f9a39645290da8" %}
 
 package:
   name: {{ name }}
   version: {{ version }}
 
 source:
-  url: https://github.com/RustPython/RustPython/archive/{{ version }}.tar.gz
+  url: https://github.com/RustPython/RustPython/archive/v{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
   number: {{ build }}
-  skip: True  # [win]
-  missing_dso_whitelist:  # [osx]
+  skip: true  # [win]
+  missing_dso_whitelist:   # [osx]
     - /usr/lib/libresolv.9.dylib  # [osx]
     - /usr/lib/libz.1.dylib  # [osx]
 
