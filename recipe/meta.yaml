@@ -1,7 +1,7 @@
 {% set name = "rustpython" %}
-{% set version = "0.1.2" %}
+{% set version = "0.2.0" %}
 {% set build = 0 %}
-{% set sha256 = "14c2786b28072006de1f9035487b0f65a9d1972d7e1f3fe4a2f9a39645290da8" %}
+{% set sha256 = "c72bc93936109491015b42324aa8e8fec469084dbc62a2c81d30791f430aa1c5" %}
 
 package:
   name: {{ name }}
