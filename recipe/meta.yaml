@@ -1,14 +1,14 @@
 {% set name = "rustpython" %}
-{% set version = "0.1.2" %}
+{% set version = "0.3.0" %}
 {% set build = 0 %}
-{% set sha256 = "14c2786b28072006de1f9035487b0f65a9d1972d7e1f3fe4a2f9a39645290da8" %}
+{% set sha256 = "4d1fe4fff4e69a348ddd4e627bc46e5cd2589520d95d2c6cf4085a45bf352e0c" %}
 
 package:
   name: {{ name }}
   version: {{ version }}
 
 source:
-  url: https://github.com/RustPython/RustPython/archive/v{{ version }}.tar.gz
+  url: https://github.com/RustPython/RustPython/archive/{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
